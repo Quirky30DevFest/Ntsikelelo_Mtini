@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Youth Yengingqi</title>
+		<script src="resources/javascript.js" charset="utf-8"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" type="text/javascript"></script>
+		<style>
+			#container{
+				width: 80%;
+				margin: 0 auto;
+			}
+			#topNavBar ul li a{
+				color: white;
+				text-align: right;
+			}
+			#topNavBar ul li a:hover{
+				background-color: #ddd;
+				color: black;
+				text-decoration-style: none;
+			}
+			#topNavBar{
+				background-color: #555;
+				width: 80%;
+				height: 17px;
+				margin-top: -16px;
+				margin-left: 133px;
+			}
+			#topNavBar ul li{
+				list-style-type: none;
+				display: inline;
+			}
+			#container #navigationBar ul li{
+				list-style-type: none;
+				display: inline;
+			}
+			#container #navigationBar ul{
+				text-align: center;
+			}
+			#container #navigationBar{
+				background-color: #333;
+				overflow: hidden;
+			}
+			#container #navigationBar ul li a{
+				color: #f2f2f2;
+				font-size: 17px;
+				width: 340px;
+				text-align: center;
+				padding: 14px 16px 15px;
+				text-decoration: none;
+			}
+			#container #navigationBar ul li a:hover{
+				background-color: #ddd;
+				color: black;	
+			}
+			#container #navigationBar ul li a:active {
+				background-color: #4CAF50;
+				color: white;
+			}
+			* {box-sizing: border-box}
+			.mySlides {
+				display: none;
+			}
+			.dot {
+				height: 13px;
+				width: 13px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 25%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+			.slideShowContainor{
+				background-repeat: no-repeat;
+				width: 20px;
+			}
+			.contents{
+				margin: 0 auto;
+			}
+			.contents .transbox{
+				background-color: #ffffff;
+				opacity: 0.6;
+				width: 100%;
+				filter: alpha(opacity=60);
+				margin: 0 auto;
+			}
+			.transbox{
+				margin: 30px;
+				background-color: #ffffff;
+				border: 1px solid black;
+				opacity: 0.6;
+				filter: alpha(opacity=20);
+			}
+			.transbox img{
+				margin-left: 38%;
+				margin-top: -100px;
+				width: 25%;
+				height: 25%;
+			}
+			.transbox p{
+				margin: 5%;
+				font-weight: bold;
+				color: #000000;
+				font-family: Helvetica, Arial, sans-serif;
+			}
+			.transbox h1{
+				text-align: center;
+				margin-top: -100px;
+				font-family: "Bauhaus 93"
+			}
+			.transbox .mePic img{
+				background-color: black;
+				margin-left: 5%;
+			}
+			.transbox .b7 img{
+				background-color: black;
+				margin-left: 33%;
+				margin-bottom: -13%;
+			}
+			.mePic .caption-text{
+				background-color: white;
+				font-size-adjust: 20%;
+				width: 265px;
+				height: 200px;
+				margin-left: 5%;
+				margin-top: 2px;
+				border-style: ridge;
+			}
+			.b7 .caption-b7{
+				background-color: white;
+				font-size-adjust: 20%;
+				width: 265px;
+				height: 200px;
+				margin-left: 60%;
+				margin-top: -68px;
+				border-style: ridge;
+			}
+			.transbox .info{
+				margin-left: 350px;
+				margin-top: -600px;
+				border-bottom: 1px solid #999;
+			}
+			#footer{
+				font-size: 17px;
+				text-align: center;
+				color: #f2f2f2;
+				padding: 14px 16px 15px;
+				background-color: #333;
+				filter: alpha(opacity=60);
+			}
+			body{
+				font-family: Helvetica, Arial, sans-serif;
+				background: url("C:/Users/Lenovo/Desktop/Youth-Yengingqi/background1.jpg");
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div id="topNavBar">
+		<ul>
+			<li><a href="logIn.html" target="blank">log in</a></li>
+			<li><a href="signUp.html" target="blank">sign up</a></li>
+		</ul>
+	</div>
+		<div id="container">
+			<div id="navigationBar" style="position: fixed; position: relative;">
+				<ul>
+					<li><a href="divs.html">Home Page</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#gallery.html">Gallery</a></li>
+					<li><a href="#opportunities.html">Opportunities</a></li>
+					<li><a href="#application.html">Application Form</a></li>
+				</ul>
+			</div>
+
+			<div class="slideShowContainor">
+				<div class="mySlides fade">
+				<a href="fashion.html" target="blank"><img src="C:\Users\Lenovo\Desktop\HTML Class\images\fashion.jpg" width="1066" height="300"></a>
+				</div>
+
+				<div class="mySlides fade">
+				<a href="food.html" target="blank"><img src="C:\Users\Lenovo\Desktop\HTML Class\images\food.JPG" width="1066" height="300"></a>
+				</div>
+
+				<div class="mySlides fade">
+				<a href="#" target="blank"><img src="C:\Users\Lenovo\Desktop\Youth-Yengingqi\art.JPG" width="1066" height="300"></a>
+				</div>
+
+				<div class="mySlides fade">
+				<a href="#" target="blank"><img src="C:\Users\Lenovo\Desktop\HTML Class\images\hiphop.jpg" width="1066" height="300"></a>
+				</div>
+
+			</div>
+
+			<div class="contents">
+				<div class="transbox">
+					<div style="text-align: center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+					</div>
+					<img src="C:\Users\Lenovo\Desktop\Youth-Yengingqi\logo.png">
+
+					<div class="mePic">
+					<a href="about.html" target="blank"><img src="C:\Users\Lenovo\Desktop\Youth-Yengingqi\me.jpg"></a>
+
+						<P class="caption-text">Cartoonist / Website Developer / Writer / <a href="beats.html">Beats producer</a>. A full-time chilla, hippie and a 
+						part-time bluff, Ntsikei / Ntsikza / Ntsidos /maNtsiki (whatever his name is) believes that a man does not grow a beard, but 
+						that a beard grows a man... MxM! whatever that means.</P>
+					</div>
+
+					 <p class="info">What - Youth Yengingqi (powered by G-Code) provides an online platform for the young kasi entrepreneurs / artists. <br></br>
+
+					 Here on this site we host and publish the youth's projects, be it events advetising posters or youth getherings such as activits i.e Youth Concious etc. <br></br>
+
+					 Due to the fast growing and merging of Tech and Entrepreneurship / Business, here on Youth Yengingqi we create tailor-made websites for their business ventures and we provide a space into our servers inoder to host for their business' websites. <br></br>
+
+					 How - It all started back in 2017 when Ntsikza the founder of the circle of young ambitious computer programmers and mobile app developers called G-Code, he saw how the young entrepreneurs lacked not only studios to craft their arts, start their businesses and publish themselves but failed to draw and create a packed customer base from various cape town townships. <br></br> With this in mind, his crew and him saw a slot where they can create websites for them at a lower price and provide a server to host their websites. <br></br>
+					 </p>
+
+					 <div class="b7">
+					 	<img src="C:\Users\Lenovo\Desktop\Youth-Yengingqi\b7.JPG">
+
+					 	<P class="caption-b7"><br></br>On the left - the first Rap / Hip hop crew I worked with, dang! those were the days. Hear one of their songs below.</P>
+
+					 </div>
+
+					 <audio controls>
+					 	<source src="Goin' no where BY Bun &Wil-Eye ft Promic [ pro by T.S]{TSP}.mp3">
+					 </audio>
+
+					 <audio controls>
+					 	<source src="B7---journey { by T.S and will-eye}.mp3">
+					 </audio>
+
+					 <audio controls>
+					 	<source src="B7- I Cant Run .mp3">
+					 </audio>
+				</div>
+			</div>
+
+			<div id="footer" class="content">
+				&copy; 2017 & Powered by G-Code &reg;, All Rights Reserved.
+			</div>
+
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+		 		var i;
+		 		var slides = document.getElementsByClassName("mySlides");
+		 		var dots = document.getElementsByClassName("dot");
+
+		 		for (i = 0; i < slides.length; i++) {
+		 			slides[i].style.display = "none";  
+		 		}
+		 		slideIndex++;
+		 			if (slideIndex> slides.length) {slideIndex = 1}    
+		 				for (i = 0; i < dots.length; i++) 
+		 				{
+		 					dots[i].className = dots[i].className.replace(" active", "");
+		 				}
+		 				slides[slideIndex-1].style.display = "block";
+		 				dots[slideIndex-1].className += " active";
+		 				setTimeout(showSlides, 3000); // Change image every 2 seconds
+		 			}
+		 	</script>
+		</div>
+	</body>
+</html>
